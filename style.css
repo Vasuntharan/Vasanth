@@ -1,0 +1,126 @@
+body{
+    background: black;
+}
+#face{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(pink,white,pink,skyblue);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: auto;
+    margin-top: 15px;
+}
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: linear-gradient(pink,white,pink,skyblue);
+    margin-top: 18px;
+    border-radius: 50px;
+}
+#center{
+    height:200px;
+    width:200px;
+    background:linear-gradient(skyblue,pink,white,pink,skyblue);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#body{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+}
+#lleg,#rleg{
+    height: 100px;
+    width: 25px;
+    background:linear-gradient(skyblue,pink,white,pink,skyblue);
+    margin-top: 18px;
+    border-radius: 50px;
+}
+#legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: auto;
+    margin-top: -35px;
+}
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    background: linear-gradient(brown,black,brown);
+    border-radius: 50%;
+    margin-top: 60px;
+}
+#eyes{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+#main{
+    height: 530px;
+    width: 350px;
+    border: 3px solid white;
+    margin: auto;
+    margin-top: 80px;
+}
+#main:hover #face{
+    animation: changeface 0.5s infinite;
+}
+@keyframes changeface{
+    0%{
+        transform: rotateX(180deg);
+    }
+    25%{
+        transform:translateX(-180deg);
+    }
+    50%{
+        transform:translateX(180deg);
+    }
+    75%{
+        transform:translateX(-180deg);
+    }
+    100%{
+        transform:translateX(180deg);
+    }
+}
+#main:hover #body{
+    animation: changebody 0.5s infinite;
+}
+@keyframes changebody{
+    0%{
+        transform: rotateX(180deg);
+    }
+    25%{
+        transform:translateX(-180deg);
+    }
+    50%{
+        transform:translateX(180deg);
+    }
+    75%{
+        transform:translateX(-180deg);
+    }
+    100%{
+        transform:translateX(180deg);
+    }
+}
+#main:hover #legs{
+    animation: changelegs 0.5s infinite;
+}
+@keyframes changelegs{
+    0%{
+        transform: rotateX(180deg);
+    }
+    25%{
+        transform:translateX(-180deg);
+    }
+    50%{
+        transform:translateX(180deg);
+    }
+    75%{
+        transform:translateX(-180deg);
+    }
+    100%{
+        transform:translateX(180deg);
+    }
+}
